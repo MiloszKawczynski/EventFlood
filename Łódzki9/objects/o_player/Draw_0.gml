@@ -1,5 +1,3 @@
-draw_set_color(c_aqua);
-
-draw_circle(x, y - 16, airInBubble, false);
+draw_sprite_ext(s_bubble, 0, x + (52 + airInBubble * 3) * image_xscale, y - 142, airInBubble / maxAirInBubble, airInBubble / maxAirInBubble, 0, c_white, 1);
 
 draw_self();

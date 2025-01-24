@@ -1,35 +1,26 @@
 // ---MOVEMENT---
 
 var horizontalDirection = input_check("right") - input_check("left");
-var verticalDirection = input_check("down") - input_check("up");
 	
-hspeed += horizontalDirection * acceleration;
-vspeed += verticalDirection * acceleration * 0;
-	
-hspeed = min(abs(hspeed), defaultSpeed) * sign(hspeed);
-vspeed = min(abs(vspeed), defaultSpeed) * sign(vspeed);
+hSpeed += horizontalDirection * acceleration;
+hSpeed = min(abs(hSpeed), defaultSpeed) * sign(hSpeed);
 
 if (horizontalDirection == 0)
 {
-	hspeed -= sign(hspeed) * deceleration;
+	hSpeed -= sign(hSpeed) * deceleration;
 }
 
-if (verticalDirection == 0)
+if (abs(hSpeed) < deceleration)
 {
-	vspeed -= sign(vspeed) * deceleration;
-}
-	
-if (abs(hspeed) < deceleration)
-{
-	hspeed = 0;
-}
-
-if (abs(vspeed) < deceleration)
-{
-	vspeed = 0;
+	hSpeed = 0;
 }
 
 // ---BUBBLES---
+
+if (input_check("up"))
+{
+	y--;
+}
 
 if (input_check("action") and !place_meeting(x, y, o_airArea))
 {
@@ -43,10 +34,12 @@ else
 {
 	if (airInBubble > 0)
 	{
-		var inst = instance_create_depth(x, y - 16, depth, o_bubble);
-		inst.air = airInBubble;
+		var inst = instance_create_depth(x + (52 + airInBubble * 3) * image_xscale, y - 142, depth, o_bubble, 
+		{
+			air: airInBubble
+		});
 		
-		vspeed = airInBubble * 0.5;
+		vSpeed = airInBubble * 0.5;
 		airInBubble = 0;
 	}
 }
@@ -55,10 +48,25 @@ else
 
 if (place_meeting(x, y, o_airArea))
 {
-	if (air < maxAir)
-	{
-		air++;
-		vspeed -= 0.5;
-	}
+	vSpeed += 1;
+	vSpeed = min(vSpeed, 30);
+	air++;
 	air = min(air, maxAir);
 }
+else 
+{
+	vSpeed -= sign(vSpeed) * deceleration;
+	if (abs(vSpeed) < deceleration)
+	{
+		vSpeed = 0;
+	}
+}
+
+if (sign(hSpeed) != 0)
+{
+	image_xscale = sign(hSpeed);
+}
+
+
+x += hSpeed;
+y += vSpeed;

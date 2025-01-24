@@ -1,2 +1,1 @@
-y--;
-x += sin((current_time / 1000) + seed);
+physics_apply_force(x, y, 0, -air * 10);

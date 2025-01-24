@@ -26,7 +26,7 @@
   "origin":4,
   "parent":{
     "name":"own",
-    "path":"folders/0_armezToolbox/ui/example/assets/slider/own.yy",
+    "path":"folders/0_ThirdParty/ArmezToolbox/ui/example/assets/slider/own.yy",
   },
   "preMultiplyAlpha":false,
   "resourceType":"GMSprite",

@@ -29,7 +29,7 @@
   "origin":4,
   "parent":{
     "name":"complex",
-    "path":"folders/0_armezToolbox/ui/example/assets/input/complex.yy",
+    "path":"folders/0_ThirdParty/ArmezToolbox/ui/example/assets/input/complex.yy",
   },
   "preMultiplyAlpha":false,
   "resourceType":"GMSprite",

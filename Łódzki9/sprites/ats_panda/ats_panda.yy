@@ -26,7 +26,7 @@
   "origin":9,
   "parent":{
     "name":"own",
-    "path":"folders/0_armezToolbox/ui/example/assets/dragAndDrop/own.yy",
+    "path":"folders/0_ThirdParty/ArmezToolbox/ui/example/assets/dragAndDrop/own.yy",
   },
   "preMultiplyAlpha":false,
   "resourceType":"GMSprite",

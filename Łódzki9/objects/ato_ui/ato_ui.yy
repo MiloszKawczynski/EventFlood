@@ -9,7 +9,7 @@
   "overriddenProperties":[],
   "parent":{
     "name":"ui",
-    "path":"folders/0_armezToolbox/ui.yy",
+    "path":"folders/0_ThirdParty/ArmezToolbox/ui.yy",
   },
   "parentObjectId":null,
   "persistent":false,

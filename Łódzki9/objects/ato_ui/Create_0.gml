@@ -82,6 +82,8 @@ function UI() constructor
 	
 		group = new other.Group();
 		
+		ui = other.ui;
+		
 		//Public Methods +
 		
 		static setGrid = function(_horizontalGrid, _verticalGrid, _showGrid = false)
@@ -2116,6 +2118,11 @@ function UI() constructor
 			{
 				draw = function()
 				{
+					if (!surface_exists(component.surface))
+					{
+						component.surface = surface_create(component.widthBackground, component.heightBackground);
+					}
+					
 					var strech = component.scaleX * (component.widthBackground / component.widthValue) * component.value;
 				
 					surface_set_target(component.surface);

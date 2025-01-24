@@ -11,7 +11,7 @@
   "name":"atac_scroll",
   "parent":{
     "name":"assets",
-    "path":"folders/0_armezToolbox/ui/example/assets.yy",
+    "path":"folders/0_ThirdParty/ArmezToolbox/ui/example/assets.yy",
   },
   "resourceType":"GMAnimCurve",
   "resourceVersion":"2.0",

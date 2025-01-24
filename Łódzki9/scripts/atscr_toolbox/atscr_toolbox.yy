@@ -6,7 +6,7 @@
   "name":"atscr_toolbox",
   "parent":{
     "name":"toolbox",
-    "path":"folders/0_armezToolbox/toolbox.yy",
+    "path":"folders/0_ThirdParty/ArmezToolbox/toolbox.yy",
   },
   "resourceType":"GMScript",
   "resourceVersion":"2.0",

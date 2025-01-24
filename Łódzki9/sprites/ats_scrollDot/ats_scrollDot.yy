@@ -45,7 +45,7 @@
   "origin":9,
   "parent":{
     "name":"scroll",
-    "path":"folders/0_armezToolbox/ui/example/assets/scroll.yy",
+    "path":"folders/0_ThirdParty/ArmezToolbox/ui/example/assets/scroll.yy",
   },
   "preMultiplyAlpha":false,
   "resourceType":"GMSprite",

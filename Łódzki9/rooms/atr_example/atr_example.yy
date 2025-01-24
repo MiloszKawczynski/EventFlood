@@ -18,7 +18,7 @@
   "name":"atr_example",
   "parent":{
     "name":"example",
-    "path":"folders/0_armezToolbox/ui/example.yy",
+    "path":"folders/0_ThirdParty/ArmezToolbox/ui/example.yy",
   },
   "parentRoom":null,
   "physicsSettings":{

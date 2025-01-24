@@ -19,7 +19,7 @@ if (abs(hSpeed) < deceleration)
 
 if (input_check("up"))
 {
-	y--;
+	vSpeed = -defaultSpeed;
 }
 
 if (input_check("action") and !place_meeting(x, y, o_airArea))
@@ -67,6 +67,8 @@ if (sign(hSpeed) != 0)
 	image_xscale = sign(hSpeed);
 }
 
+//x += hSpeed;
+//y += vSpeed;
 
-x += hSpeed;
-y += vSpeed;
+phy_speed_x = hSpeed;
+phy_speed_y = vSpeed;

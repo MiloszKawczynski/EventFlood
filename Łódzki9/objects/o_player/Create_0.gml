@@ -2,7 +2,7 @@ defaultSpeed = 5;
 acceleration = 1;
 deceleration = 0.75;
 
-maxAir = 1000;
+maxAir = 100;
 air = maxAir;
 
 airInBubble = 0;

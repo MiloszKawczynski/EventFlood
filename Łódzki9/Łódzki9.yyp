@@ -541,6 +541,7 @@
     {"id":{"name":"ats_swordRedBlade","path":"sprites/ats_swordRedBlade/ats_swordRedBlade.yy",},},
     {"id":{"name":"s_bubble","path":"sprites/s_bubble/s_bubble.yy",},},
     {"id":{"name":"s_submarine","path":"sprites/s_submarine/s_submarine.yy",},},
+    {"id":{"name":"s_tank","path":"sprites/s_tank/s_tank.yy",},},
     {"id":{"name":"s_white","path":"sprites/s_white/s_white.yy",},},
   ],
   "resourceType":"GMProject",

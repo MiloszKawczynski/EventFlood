@@ -453,5 +453,6 @@
     {"name":"ats_swordRedBlade","order":3,"path":"sprites/ats_swordRedBlade/ats_swordRedBlade.yy",},
     {"name":"s_bubble","order":2,"path":"sprites/s_bubble/s_bubble.yy",},
     {"name":"s_submarine","order":1,"path":"sprites/s_submarine/s_submarine.yy",},
+    {"name":"s_tank","order":3,"path":"sprites/s_tank/s_tank.yy",},
   ],
 }

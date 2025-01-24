@@ -6,7 +6,7 @@
   "name":"__input_class_cursor",
   "parent":{
     "name":"Classes",
-    "path":"folders/Input/(System)/Classes.yy",
+    "path":"folders/0_ThirdParty/Input/(System)/Classes.yy",
   },
   "resourceType":"GMScript",
   "resourceVersion":"2.0",

@@ -6,7 +6,7 @@
   "name":"atpth_circle",
   "parent":{
     "name":"assets",
-    "path":"folders/0_armezToolbox/ui/example/assets.yy",
+    "path":"folders/0_ThirdParty/ArmezToolbox/ui/example/assets.yy",
   },
   "points":[
     {"speed":100.0,"x":1.0,"y":30.0,},

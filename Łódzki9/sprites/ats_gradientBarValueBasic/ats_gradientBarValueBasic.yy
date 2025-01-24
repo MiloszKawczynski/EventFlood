@@ -45,7 +45,7 @@
   "origin":4,
   "parent":{
     "name":"complex",
-    "path":"folders/0_armezToolbox/ui/example/assets/gradientBar/complex.yy",
+    "path":"folders/0_ThirdParty/ArmezToolbox/ui/example/assets/gradientBar/complex.yy",
   },
   "preMultiplyAlpha":false,
   "resourceType":"GMSprite",

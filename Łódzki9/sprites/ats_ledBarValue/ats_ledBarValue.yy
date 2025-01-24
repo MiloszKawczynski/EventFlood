@@ -27,7 +27,7 @@
   "origin":4,
   "parent":{
     "name":"ledBar",
-    "path":"folders/0_armezToolbox/ui/example/assets/ledBar.yy",
+    "path":"folders/0_ThirdParty/ArmezToolbox/ui/example/assets/ledBar.yy",
   },
   "preMultiplyAlpha":false,
   "resourceType":"GMSprite",

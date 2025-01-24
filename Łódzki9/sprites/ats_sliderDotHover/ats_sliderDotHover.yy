@@ -29,7 +29,7 @@
   "origin":4,
   "parent":{
     "name":"animated",
-    "path":"folders/0_armezToolbox/ui/example/assets/slider/animated.yy",
+    "path":"folders/0_ThirdParty/ArmezToolbox/ui/example/assets/slider/animated.yy",
   },
   "preMultiplyAlpha":false,
   "resourceType":"GMSprite",

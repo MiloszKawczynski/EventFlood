@@ -6,7 +6,7 @@
   "name":"input_cursor_mouse_enabled_set",
   "parent":{
     "name":"09  Cursor",
-    "path":"folders/Input/09  Cursor.yy",
+    "path":"folders/0_ThirdParty/Input/09  Cursor.yy",
   },
   "resourceType":"GMScript",
   "resourceVersion":"2.0",

@@ -17,8 +17,14 @@ if (isHead and !isAired)
 if (isAired)
 {
 	physics_apply_force(x, y, 0, -3000 * 32);
+	
+	if (!place_meeting(x, y, o_water))
+	{
+		instance_destroy();
+	}
 }
 else 
 {
-	physics_apply_force(phy_com_x, phy_com_y, 0, -390);
+	//physics_apply_force(phy_com_x, phy_com_y, 0, -390);
+	phy_speed_y = 0;
 }

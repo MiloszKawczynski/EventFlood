@@ -114,6 +114,8 @@
     {"name":"o_water","order":13,"path":"objects/o_water/o_water.yy",},
     {"name":"atpth_circle","order":15,"path":"paths/atpth_circle/atpth_circle.yy",},
     {"name":"atpth_line","order":16,"path":"paths/atpth_line/atpth_line.yy",},
+    {"name":"path_7","order":7,"path":"paths/path_7/path_7.yy",},
+    {"name":"pth_2_1","order":6,"path":"paths/pth_2_1/pth_2_1.yy",},
     {"name":"pth_2","order":1,"path":"paths/pth_2/pth_2.yy",},
     {"name":"pth_3","order":2,"path":"paths/pth_3/pth_3.yy",},
     {"name":"pth_4","order":3,"path":"paths/pth_4/pth_4.yy",},

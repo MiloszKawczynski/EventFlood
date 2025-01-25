@@ -31,7 +31,7 @@ if (abs(vSpeed) < deceleration)
 
 // ---BUBBLES---
 
-if (input_check("action") and !place_meeting(x, y, o_airArea))
+if (input_check("action"))
 {
 	if (air > 0 and airInBubble < maxAirInBubble)
 	{
@@ -51,6 +51,7 @@ else
 	if (airInBubble > 0)
 	{
 		var inst = instance_create_depth(x + (52 + (airInBubble / maxAirInBubble) * 48) * image_xscale, y - 142, depth, o_bubble, 
+		//var inst = instance_create_depth(x + (52 + (airInBubble / maxAirInBubble) * 48) * image_xscale, y, depth, o_bubble, 
 		{
 			air: airInBubble
 		});

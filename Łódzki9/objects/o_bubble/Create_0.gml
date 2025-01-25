@@ -13,3 +13,5 @@ physics_fixture_set_friction(fix, 0);
 physics_fixture_bind(fix, id);
 
 physics_fixture_delete(fix);
+
+alarm[0] = 360;

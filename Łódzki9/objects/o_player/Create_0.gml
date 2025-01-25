@@ -1,4 +1,4 @@
-defaultSpeed = 15;
+defaultSpeed = 20;
 acceleration = 1;
 deceleration = 0.75;
 

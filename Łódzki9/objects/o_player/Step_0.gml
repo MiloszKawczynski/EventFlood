@@ -146,7 +146,6 @@ if (sign(hSpeed) != 0)
 	if (image_xscale != sign(hSpeed))
 	{
 		part_emitter_clear(_ps, _pemit1);
-		part_emitter_stream(_ps, _pemit1, _ptype1, 0);
 		
 		image_xscale = sign(hSpeed);
 	}
@@ -175,7 +174,6 @@ if (alarm[0] == -1)
 	else 
 	{
 		part_emitter_clear(_ps, _pemit1);
-		part_emitter_stream(_ps, _pemit1, _ptype1, 0);
 		
 		sprite_index = s_submarine;
 	}

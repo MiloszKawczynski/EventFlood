@@ -1,1 +1,1 @@
-alarm[0] = random(20);
+alarm[0] = random(20) + 1;

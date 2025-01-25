@@ -3,14 +3,17 @@ if (isHead and !isAired)
 	var inst = instance_place(x, y, o_bubble);
 	if (inst != noone)
 	{
-		isAired = true;
-		
-		physics_joint_rope_create(id, o_player, x, y, o_player.x, o_player.y, 450, true);
-		
-		image_xscale = 2;
-		image_yscale = 2;
-		
-		instance_destroy(inst);
+		if (inst.gayzar == false)
+		{
+			isAired = true;
+			
+			physics_joint_rope_create(id, o_player, x, y, o_player.x, o_player.y, 450, true);
+			
+			image_xscale = 2;
+			image_yscale = 2;
+			
+			instance_destroy(inst);
+		}
 	}
 }
 

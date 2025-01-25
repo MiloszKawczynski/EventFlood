@@ -14,4 +14,6 @@ physics_fixture_bind(fix, id);
 
 physics_fixture_delete(fix);
 
+gayzar = false;
+
 alarm[0] = 360;

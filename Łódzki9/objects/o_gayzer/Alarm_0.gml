@@ -8,4 +8,6 @@ repeat(2)
 	{
 		air: air * o_player.maxAirInBubble
 	});
+	
+	inst.gayzar = true;
 }

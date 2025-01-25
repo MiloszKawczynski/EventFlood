@@ -2,6 +2,12 @@
   "FolderOrderSettings":[],
   "ResourceOrderSettings":[
     {"name":"o_cables","order":1,"path":"objects/o_cables/o_cables.yy",},
+    {"name":"Path_8","order":1,"path":"paths/Path_8/Path_8.yy",},
+    {"name":"Path12","order":2,"path":"paths/Path12/Path12.yy",},
+    {"name":"Path13","order":3,"path":"paths/Path13/Path13.yy",},
+    {"name":"Path14","order":4,"path":"paths/Path14/Path14.yy",},
+    {"name":"Path15","order":2,"path":"paths/Path15/Path15.yy",},
+    {"name":"Path16","order":3,"path":"paths/Path16/Path16.yy",},
     {"name":"s_arrow","order":4,"path":"sprites/s_arrow/s_arrow.yy",},
     {"name":"s_cables","order":1,"path":"sprites/s_cables/s_cables.yy",},
     {"name":"s_ledy","order":3,"path":"sprites/s_ledy/s_ledy.yy",},

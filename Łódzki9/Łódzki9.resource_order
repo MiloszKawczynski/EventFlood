@@ -22,6 +22,8 @@
     {"name":"s_soup","order":7,"path":"sprites/s_soup/s_soup.yy",},
     {"name":"s_submarineShock","order":5,"path":"sprites/s_submarineShock/s_submarineShock.yy",},
     {"name":"s_table","order":6,"path":"sprites/s_table/s_table.yy",},
+    {"name":"s_woda","order":24,"path":"sprites/s_woda/s_woda.yy",},
+    {"name":"s_woda2","order":25,"path":"sprites/s_woda2/s_woda2.yy",},
     {"name":"s_yerba","order":8,"path":"sprites/s_yerba/s_yerba.yy",},
     {"name":"Sprite110","order":21,"path":"sprites/Sprite110/Sprite110.yy",},
   ],

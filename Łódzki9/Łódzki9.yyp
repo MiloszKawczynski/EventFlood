@@ -137,6 +137,7 @@
     {"id":{"name":"o_helpMe","path":"objects/o_helpMe/o_helpMe.yy",},},
     {"id":{"name":"o_jamowicz","path":"objects/o_jamowicz/o_jamowicz.yy",},},
     {"id":{"name":"o_jamowiczTorso","path":"objects/o_jamowiczTorso/o_jamowiczTorso.yy",},},
+    {"id":{"name":"o_light","path":"objects/o_light/o_light.yy",},},
     {"id":{"name":"o_player","path":"objects/o_player/o_player.yy",},},
     {"id":{"name":"o_staticParent","path":"objects/o_staticParent/o_staticParent.yy",},},
     {"id":{"name":"o_wall","path":"objects/o_wall/o_wall.yy",},},

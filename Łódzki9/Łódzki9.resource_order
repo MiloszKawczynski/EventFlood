@@ -110,6 +110,7 @@
     {"name":"o_helpMe","order":14,"path":"objects/o_helpMe/o_helpMe.yy",},
     {"name":"o_jamowicz","order":10,"path":"objects/o_jamowicz/o_jamowicz.yy",},
     {"name":"o_jamowiczTorso","order":11,"path":"objects/o_jamowiczTorso/o_jamowiczTorso.yy",},
+    {"name":"o_light","order":15,"path":"objects/o_light/o_light.yy",},
     {"name":"o_staticParent","order":6,"path":"objects/o_staticParent/o_staticParent.yy",},
     {"name":"o_wall","order":7,"path":"objects/o_wall/o_wall.yy",},
     {"name":"o_water","order":13,"path":"objects/o_water/o_water.yy",},

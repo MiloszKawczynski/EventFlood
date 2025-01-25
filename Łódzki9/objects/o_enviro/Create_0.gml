@@ -1,6 +1,8 @@
 x = 0;
 y = 0;
 
+mask_surface = -1;
+
 var fixture = physics_fixture_create();
 physics_fixture_set_chain_shape(fixture, true);
 
@@ -44,4 +46,15 @@ for(var i = 0; i < path_get_number(path); i++)
 	{
 		bottom = path_get_point_y(path, i);
 	}
+}
+
+if (right - left > bottom - top)
+{
+	bottom = right;
+	top = left;
+}
+else 
+{
+	right = bottom;
+	left = top;
 }

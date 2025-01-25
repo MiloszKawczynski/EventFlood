@@ -5,6 +5,8 @@ if (isHead and !isAired)
 	{
 		isAired = true;
 		
+		physics_joint_rope_create(id, o_player, x, y, o_player.x, o_player.y, 450, true);
+		
 		image_xscale = 2;
 		image_yscale = 2;
 		
@@ -14,7 +16,7 @@ if (isHead and !isAired)
 
 if (isAired)
 {
-	physics_apply_force(x, y, 0, -15 * 32);
+	physics_apply_force(x, y, 0, -3000 * 32);
 }
 else 
 {

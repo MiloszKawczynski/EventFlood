@@ -123,6 +123,7 @@
     {"id":{"name":"atf_smallFont","path":"fonts/atf_smallFont/atf_smallFont.yy",},},
     {"id":{"name":"f_main","path":"fonts/f_main/f_main.yy",},},
     {"id":{"name":"f_test","path":"fonts/f_test/f_test.yy",},},
+    {"id":{"name":"Note1","path":"notes/Note1/Note1.yy",},},
     {"id":{"name":"ato_ui","path":"objects/ato_ui/ato_ui.yy",},},
     {"id":{"name":"ato_uiExample","path":"objects/ato_uiExample/ato_uiExample.yy",},},
     {"id":{"name":"input_controller_object","path":"objects/input_controller_object/input_controller_object.yy",},},

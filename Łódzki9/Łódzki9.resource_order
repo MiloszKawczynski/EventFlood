@@ -467,6 +467,7 @@
     {"name":"s_head","order":7,"path":"sprites/s_head/s_head.yy",},
     {"name":"s_materace","order":5,"path":"sprites/s_materace/s_materace.yy",},
     {"name":"s_submarine","order":1,"path":"sprites/s_submarine/s_submarine.yy",},
+    {"name":"s_submarineAnim","order":9,"path":"sprites/s_submarineAnim/s_submarineAnim.yy",},
     {"name":"s_tank","order":3,"path":"sprites/s_tank/s_tank.yy",},
     {"name":"s_tileGround","order":4,"path":"sprites/s_tileGround/s_tileGround.yy",},
     {"name":"s_torso","order":6,"path":"sprites/s_torso/s_torso.yy",},

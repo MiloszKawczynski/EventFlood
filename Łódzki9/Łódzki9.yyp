@@ -558,6 +558,7 @@
     {"id":{"name":"s_head","path":"sprites/s_head/s_head.yy",},},
     {"id":{"name":"s_materace","path":"sprites/s_materace/s_materace.yy",},},
     {"id":{"name":"s_submarine","path":"sprites/s_submarine/s_submarine.yy",},},
+    {"id":{"name":"s_submarineAnim","path":"sprites/s_submarineAnim/s_submarineAnim.yy",},},
     {"id":{"name":"s_tank","path":"sprites/s_tank/s_tank.yy",},},
     {"id":{"name":"s_tileGround","path":"sprites/s_tileGround/s_tileGround.yy",},},
     {"id":{"name":"s_torso","path":"sprites/s_torso/s_torso.yy",},},

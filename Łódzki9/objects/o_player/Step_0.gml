@@ -55,7 +55,7 @@ else
 			air: airInBubble
 		});
 		
-		vSpeed = airInBubble * airHeightFactor;
+		vSpeed += airInBubble * airHeightFactor;
 		airInBubble = 0;
 	}
 }
@@ -117,10 +117,12 @@ vSpeed -= sum;
 
 // ---AirPockets---
 
-if (place_meeting(x, y, o_airArea))
+if (place_meeting(x, y, o_airArea)
+	or !place_meeting(x, y, o_water))
 {
-	vSpeed += 1;
+	vSpeed += 1.5;
 	vSpeed = min(vSpeed, 30);
+	
 	air++;
 	air = min(air, maxAir);
 }
@@ -136,6 +138,15 @@ else
 if (sign(hSpeed) != 0)
 {
 	image_xscale = sign(hSpeed);
+}
+
+if (abs(hSpeed) > 0)
+{
+	sprite_index = s_submarineAnim;
+}
+else 
+{
+	sprite_index = s_submarine;
 }
 
 phy_speed_x = hSpeed;

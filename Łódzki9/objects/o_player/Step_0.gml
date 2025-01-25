@@ -1,7 +1,13 @@
 // ---MOVEMENT---
 
-var horizontalDirection = input_check("right") - input_check("left");
-var verticalDirection = input_check("down") - input_check("up");
+var horizontalDirection = 0;
+var verticalDirection = 0;
+
+if (alarm[0] == -1)
+{
+	horizontalDirection = input_check("right") - input_check("left");
+	verticalDirection = input_check("down") - input_check("up");
+}
 	
 hSpeed += horizontalDirection * acceleration;
 hSpeed = min(abs(hSpeed), defaultSpeed) * sign(hSpeed);
@@ -146,30 +152,43 @@ if (sign(hSpeed) != 0)
 	}
 }
 
-if (abs(hSpeed) > 0)
+if (alarm[0] == -1)
 {
-	sprite_index = s_submarineAnim;
-	
-	part_emitter_region(_ps, _pemit1, -27, 37, -49.875, 49.875, ps_shape_rectangle, ps_distr_linear);
-	part_system_position(_ps, x - image_xscale * 250, y + 75);
-	
-	if (image_xscale == 1)
+	if (abs(hSpeed) > 0)
 	{
-		part_type_direction(_ptype1, 180 - 15, 180, -0.2, 10);
+		sprite_index = s_submarineAnim;
+		
+		part_emitter_region(_ps, _pemit1, -27, 37, -49.875, 49.875, ps_shape_rectangle, ps_distr_linear);
+		part_system_position(_ps, x - image_xscale * 250, y + 75);
+		
+		if (image_xscale == 1)
+		{
+			part_type_direction(_ptype1, 180 - 15, 180, -0.2, 10);
+		}
+		else 
+		{
+			part_type_direction(_ptype1, 0 + 15, 0, 0.2, 10);
+		}
+		
+		part_emitter_stream(_ps, _pemit1, _ptype1, 1);
 	}
 	else 
 	{
-		part_type_direction(_ptype1, 0 + 15, 0, 0.2, 10);
+		part_emitter_clear(_ps, _pemit1);
+		part_emitter_stream(_ps, _pemit1, _ptype1, 0);
+		
+		sprite_index = s_submarine;
 	}
-	
-	part_emitter_stream(_ps, _pemit1, _ptype1, 1);
 }
-else 
+
+if (place_meeting(x, y, o_cables) and alarm[0] == -1)
 {
-	part_emitter_clear(_ps, _pemit1);
-	part_emitter_stream(_ps, _pemit1, _ptype1, 0);
+	hSpeed = sign(x - instance_nearest(x, y, o_cables).x) * 10;
+	vSpeed = sign(y - instance_nearest(x, y, o_cables).y) * 10;
 	
-	sprite_index = s_submarine;
+	sprite_index = s_submarineShock;
+	
+	alarm[0] = 80;
 }
 
 phy_speed_x = hSpeed;

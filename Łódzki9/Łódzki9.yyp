@@ -143,6 +143,11 @@
     {"id":{"name":"o_staticParent","path":"objects/o_staticParent/o_staticParent.yy",},},
     {"id":{"name":"o_wall","path":"objects/o_wall/o_wall.yy",},},
     {"id":{"name":"o_water","path":"objects/o_water/o_water.yy",},},
+<<<<<<< Updated upstream
+=======
+    {"id":{"name":"ParticleSystem2","path":"particles/ParticleSystem2/ParticleSystem2.yy",},},
+    {"id":{"name":"ParticleSystem4","path":"particles/ParticleSystem4/ParticleSystem4.yy",},},
+>>>>>>> Stashed changes
     {"id":{"name":"ps_air","path":"particles/ps_air/ps_air.yy",},},
     {"id":{"name":"ps_human","path":"particles/ps_human/ps_human.yy",},},
     {"id":{"name":"ps_turbina","path":"particles/ps_turbina/ps_turbina.yy",},},
@@ -582,6 +587,7 @@
     {"id":{"name":"s_tileGroundBG","path":"sprites/s_tileGroundBG/s_tileGroundBG.yy",},},
     {"id":{"name":"s_torso","path":"sprites/s_torso/s_torso.yy",},},
     {"id":{"name":"s_white","path":"sprites/s_white/s_white.yy",},},
+    {"id":{"name":"Sprite90","path":"sprites/Sprite90/Sprite90.yy",},},
   ],
   "resourceType":"GMProject",
   "resourceVersion":"2.0",

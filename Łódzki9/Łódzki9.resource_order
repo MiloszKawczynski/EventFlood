@@ -115,6 +115,11 @@
     {"name":"o_staticParent","order":6,"path":"objects/o_staticParent/o_staticParent.yy",},
     {"name":"o_wall","order":7,"path":"objects/o_wall/o_wall.yy",},
     {"name":"o_water","order":13,"path":"objects/o_water/o_water.yy",},
+<<<<<<< Updated upstream
+=======
+    {"name":"ParticleSystem2","order":1,"path":"particles/ParticleSystem2/ParticleSystem2.yy",},
+    {"name":"ParticleSystem4","order":2,"path":"particles/ParticleSystem4/ParticleSystem4.yy",},
+>>>>>>> Stashed changes
     {"name":"ps_human","order":1,"path":"particles/ps_human/ps_human.yy",},
     {"name":"ps_turbina","order":1,"path":"particles/ps_turbina/ps_turbina.yy",},
     {"name":"atpth_circle","order":15,"path":"paths/atpth_circle/atpth_circle.yy",},
@@ -488,5 +493,6 @@
     {"name":"s_tileGround","order":4,"path":"sprites/s_tileGround/s_tileGround.yy",},
     {"name":"s_tileGroundBG","order":15,"path":"sprites/s_tileGroundBG/s_tileGroundBG.yy",},
     {"name":"s_torso","order":6,"path":"sprites/s_torso/s_torso.yy",},
+    {"name":"Sprite90","order":20,"path":"sprites/Sprite90/Sprite90.yy",},
   ],
 }

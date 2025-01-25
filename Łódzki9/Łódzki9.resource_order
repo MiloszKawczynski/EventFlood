@@ -465,6 +465,7 @@
     {"name":"s_bubble","order":2,"path":"sprites/s_bubble/s_bubble.yy",},
     {"name":"s_duperele","order":8,"path":"sprites/s_duperele/s_duperele.yy",},
     {"name":"s_head","order":7,"path":"sprites/s_head/s_head.yy",},
+    {"name":"s_kaloryfer","order":10,"path":"sprites/s_kaloryfer/s_kaloryfer.yy",},
     {"name":"s_materace","order":5,"path":"sprites/s_materace/s_materace.yy",},
     {"name":"s_submarine","order":1,"path":"sprites/s_submarine/s_submarine.yy",},
     {"name":"s_submarineAnim","order":9,"path":"sprites/s_submarineAnim/s_submarineAnim.yy",},

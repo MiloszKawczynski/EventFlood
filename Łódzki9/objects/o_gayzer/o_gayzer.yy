@@ -31,8 +31,8 @@
   "resourceVersion":"2.0",
   "solid":false,
   "spriteId":{
-    "name":"s_white",
-    "path":"sprites/s_white/s_white.yy",
+    "name":"s_kaloryfer",
+    "path":"sprites/s_kaloryfer/s_kaloryfer.yy",
   },
   "spriteMaskId":null,
   "visible":true,

@@ -557,6 +557,7 @@
     {"id":{"name":"ats_sword","path":"sprites/ats_sword/ats_sword.yy",},},
     {"id":{"name":"ats_swordGlow","path":"sprites/ats_swordGlow/ats_swordGlow.yy",},},
     {"id":{"name":"ats_swordRedBlade","path":"sprites/ats_swordRedBlade/ats_swordRedBlade.yy",},},
+    {"id":{"name":"s_airpocket","path":"sprites/s_airpocket/s_airpocket.yy",},},
     {"id":{"name":"s_bubble","path":"sprites/s_bubble/s_bubble.yy",},},
     {"id":{"name":"s_duperele","path":"sprites/s_duperele/s_duperele.yy",},},
     {"id":{"name":"s_head","path":"sprites/s_head/s_head.yy",},},

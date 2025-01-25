@@ -465,6 +465,7 @@
     {"name":"ats_sword","order":1,"path":"sprites/ats_sword/ats_sword.yy",},
     {"name":"ats_swordGlow","order":2,"path":"sprites/ats_swordGlow/ats_swordGlow.yy",},
     {"name":"ats_swordRedBlade","order":3,"path":"sprites/ats_swordRedBlade/ats_swordRedBlade.yy",},
+    {"name":"s_airpocket","order":11,"path":"sprites/s_airpocket/s_airpocket.yy",},
     {"name":"s_bubble","order":2,"path":"sprites/s_bubble/s_bubble.yy",},
     {"name":"s_duperele","order":8,"path":"sprites/s_duperele/s_duperele.yy",},
     {"name":"s_head","order":7,"path":"sprites/s_head/s_head.yy",},

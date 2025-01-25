@@ -48,13 +48,3 @@ for(var i = 0; i < path_get_number(path); i++)
 	}
 }
 
-if (right - left > bottom - top)
-{
-	bottom = right;
-	top = left;
-}
-else 
-{
-	right = bottom;
-	left = top;
-}

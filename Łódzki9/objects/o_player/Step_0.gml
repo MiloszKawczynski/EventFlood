@@ -6,8 +6,8 @@ var verticalDirection = input_check("down") - input_check("up");
 hSpeed += horizontalDirection * acceleration;
 hSpeed = min(abs(hSpeed), defaultSpeed) * sign(hSpeed);
 
-vSpeed += verticalDirection * acceleration;
-vSpeed = min(abs(vSpeed), defaultSpeed) * sign(vSpeed);
+//vSpeed += verticalDirection * acceleration * 0;
+//vSpeed = min(abs(vSpeed), defaultSpeed) * sign(vSpeed);
 
 if (horizontalDirection == 0)
 {
@@ -43,15 +43,60 @@ else
 {
 	if (airInBubble > 0)
 	{
-		var inst = instance_create_depth(x + (52 + airInBubble * 3) * image_xscale, y - 142, depth, o_bubble, 
+		var inst = instance_create_depth(x + (52 + (airInBubble / maxAirInBubble) * 48) * image_xscale, y - 142, depth, o_bubble, 
 		{
 			air: airInBubble
 		});
 		
-		vSpeed = airInBubble * 0.5;
+		vSpeed = airInBubble * airHeightFactor;
 		airInBubble = 0;
 	}
 }
+
+if (place_meeting(x, y, o_bubble))
+{
+	vSpeed = -1.1;
+	if (air < maxAir)
+	{
+		air++;
+	}
+}
+
+//if (air == maxAir)
+//{
+	//vSpeed = -5;
+//}
+//
+//if (air == 0)
+//{
+	//vSpeed = 5;
+//}
+
+//if (input_check("rapidFire") and !place_meeting(x, y, o_airArea))
+//{
+	//if (air < maxAir)
+	//{
+		//air++;
+		//vSpeed = -1;
+	//}
+	//
+	////var rapidFireSize = 10;
+	////
+	////if (air > rapidFireSize)
+	////{
+		////
+		////air -= rapidFireSize;
+		////airInBubble += rapidFireSize;
+		////
+		////var inst = instance_create_depth(x + (52 + (airInBubble / maxAirInBubble) * 48) * image_xscale, y - 142, depth, o_bubble, 
+		////{
+			////air: airInBubble
+		////});
+		////
+		////vSpeed = airInBubble * airHeightFactor;
+		////airInBubble = 0;
+	////}
+//}
 
 // ---AirPockets---
 
@@ -75,41 +120,6 @@ if (sign(hSpeed) != 0)
 {
 	image_xscale = sign(hSpeed);
 }
-
-//x += hSpeed;
-//y += vSpeed;
-
-//if (place_meeting(x + hSpeed, y, o_staticParent))
-//{
-	//while (!place_meeting(x + sign(hSpeed), y , o_staticParent))
-	//{
-		//x += sign(hSpeed) * 0.5;
-	//}
-		//
-	//hSpeed = 0;
-//}
-//
-//if (place_meeting(x, y + vSpeed, o_staticParent))
-//{
-	//while (!place_meeting(x, y + sign(vSpeed), o_staticParent))
-	//{
-		//y += sign(vSpeed) * 0.5;
-	//}
-		//
-	//vSpeed = 0;
-//}
-//
-//if (place_meeting(x + hSpeed, y + vSpeed, o_staticParent))
-//{
-	//while (!place_meeting(x + sign(hSpeed), y + sign(vSpeed), o_staticParent))
-	//{
-		//x += sign(hSpeed) * 0.5;
-		//y += sign(vSpeed) * 0.5;
-	//}
-		//
-	//hSpeed = 0;
-	//vSpeed = 0;
-//}
 
 phy_speed_x = hSpeed;
 phy_speed_y = vSpeed;

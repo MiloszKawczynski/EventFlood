@@ -1,0 +1,23 @@
+{
+  "$GMPath":"",
+  "%Name":"pth_4",
+  "closed":true,
+  "kind":0,
+  "name":"pth_4",
+  "parent":{
+    "name":"Paths",
+    "path":"folders/Paths.yy",
+  },
+  "points":[
+    {"speed":100.0,"x":12496.0,"y":416.0,},
+    {"speed":100.0,"x":11280.0,"y":1360.0,},
+    {"speed":100.0,"x":10945.023,"y":1388.8752,},
+    {"speed":100.0,"x":10432.0,"y":1424.0,},
+    {"speed":100.0,"x":10880.0,"y":1808.0,},
+    {"speed":100.0,"x":11472.0,"y":2000.0,},
+    {"speed":100.0,"x":12848.0,"y":1152.0,},
+  ],
+  "precision":4,
+  "resourceType":"GMPath",
+  "resourceVersion":"2.0",
+}

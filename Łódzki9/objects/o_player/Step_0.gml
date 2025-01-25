@@ -38,6 +38,13 @@ if (input_check("action") and !place_meeting(x, y, o_airArea))
 		air--;
 		airInBubble++;
 	}
+	else 
+	{
+		if (airInBubble == 0)
+		{
+			vSpeed = 4;
+		}
+	}
 }
 else 
 {
@@ -53,14 +60,24 @@ else
 	}
 }
 
-if (place_meeting(x, y, o_bubble))
+var sum = 0
+with (o_bubble)
 {
-	vSpeed = -1.1;
+	if (place_meeting(x, y, other))
+	{
+		sum += 0.3;
+	}
+}
+
+if (sum != 0)
+{
 	if (air < maxAir)
 	{
 		air++;
 	}
 }
+
+vSpeed -= sum;
 
 //if (air == maxAir)
 //{

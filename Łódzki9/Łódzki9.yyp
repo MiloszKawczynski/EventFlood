@@ -137,6 +137,7 @@
     {"id":{"name":"o_player","path":"objects/o_player/o_player.yy",},},
     {"id":{"name":"o_staticParent","path":"objects/o_staticParent/o_staticParent.yy",},},
     {"id":{"name":"o_wall","path":"objects/o_wall/o_wall.yy",},},
+    {"id":{"name":"o_water","path":"objects/o_water/o_water.yy",},},
     {"id":{"name":"atpth_circle","path":"paths/atpth_circle/atpth_circle.yy",},},
     {"id":{"name":"atpth_line","path":"paths/atpth_line/atpth_line.yy",},},
     {"id":{"name":"pth_1","path":"paths/pth_1/pth_1.yy",},},

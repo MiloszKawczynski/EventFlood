@@ -37,6 +37,11 @@ function __input_config_verbs()
             action:  input_binding_gamepad_button(gp_face1),
 			rapidFire:  input_binding_gamepad_button(gp_face3),
 		
+			hrAxis: input_binding_gamepad_axis(gp_axisrh, false),
+			vuAxis: input_binding_gamepad_axis(gp_axisrv, false),
+			hlAxis: input_binding_gamepad_axis(gp_axisrh, true),
+			vbAxis: input_binding_gamepad_axis(gp_axisrv, true),
+		
 			resetGame: input_binding_gamepad_button(gp_select),
             endGame: input_binding_gamepad_button(gp_start),
         }

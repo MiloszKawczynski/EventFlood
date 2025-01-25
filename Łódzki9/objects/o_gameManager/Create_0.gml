@@ -51,3 +51,6 @@ with(ui)
 }
 
 window_set_fullscreen(true);
+
+xVal = 0;
+yVal = 0;

@@ -468,6 +468,7 @@
     {"name":"s_airpocket","order":11,"path":"sprites/s_airpocket/s_airpocket.yy",},
     {"name":"s_bubble","order":2,"path":"sprites/s_bubble/s_bubble.yy",},
     {"name":"s_duperele","order":8,"path":"sprites/s_duperele/s_duperele.yy",},
+    {"name":"s_gate","order":16,"path":"sprites/s_gate/s_gate.yy",},
     {"name":"s_head","order":7,"path":"sprites/s_head/s_head.yy",},
     {"name":"s_kaloryfer","order":10,"path":"sprites/s_kaloryfer/s_kaloryfer.yy",},
     {"name":"s_lampa","order":12,"path":"sprites/s_lampa/s_lampa.yy",},
@@ -479,6 +480,5 @@
     {"name":"s_tileGround","order":4,"path":"sprites/s_tileGround/s_tileGround.yy",},
     {"name":"s_tileGroundBG","order":15,"path":"sprites/s_tileGroundBG/s_tileGroundBG.yy",},
     {"name":"s_torso","order":6,"path":"sprites/s_torso/s_torso.yy",},
-    {"name":"Sprite85","order":14,"path":"sprites/Sprite85/Sprite85.yy",},
   ],
 }

@@ -14,7 +14,7 @@ if (horizontalDirection == 0)
 	hSpeed -= sign(hSpeed) * deceleration;
 }
 
-if (verticalDirection == 0)
+//if (verticalDirection == 0)
 {
 	vSpeed -= sign(vSpeed) * deceleration;
 }

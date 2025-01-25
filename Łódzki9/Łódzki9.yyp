@@ -556,6 +556,7 @@
     {"id":{"name":"s_bubble","path":"sprites/s_bubble/s_bubble.yy",},},
     {"id":{"name":"s_duperele","path":"sprites/s_duperele/s_duperele.yy",},},
     {"id":{"name":"s_head","path":"sprites/s_head/s_head.yy",},},
+    {"id":{"name":"s_kaloryfer","path":"sprites/s_kaloryfer/s_kaloryfer.yy",},},
     {"id":{"name":"s_materace","path":"sprites/s_materace/s_materace.yy",},},
     {"id":{"name":"s_submarine","path":"sprites/s_submarine/s_submarine.yy",},},
     {"id":{"name":"s_submarineAnim","path":"sprites/s_submarineAnim/s_submarineAnim.yy",},},

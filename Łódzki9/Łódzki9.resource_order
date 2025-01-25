@@ -17,6 +17,8 @@
     {"name":"s_laptopFront","order":9,"path":"sprites/s_laptopFront/s_laptopFront.yy",},
     {"name":"s_ledy","order":3,"path":"sprites/s_ledy/s_ledy.yy",},
     {"name":"s_milosz","order":11,"path":"sprites/s_milosz/s_milosz.yy",},
+    {"name":"s_natalkaShook","order":22,"path":"sprites/s_natalkaShook/s_natalkaShook.yy",},
+    {"name":"s_reka","order":23,"path":"sprites/s_reka/s_reka.yy",},
     {"name":"s_soup","order":7,"path":"sprites/s_soup/s_soup.yy",},
     {"name":"s_submarineShock","order":5,"path":"sprites/s_submarineShock/s_submarineShock.yy",},
     {"name":"s_table","order":6,"path":"sprites/s_table/s_table.yy",},

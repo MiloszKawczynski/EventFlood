@@ -96,6 +96,7 @@
     {"name":"atf_font","order":13,"path":"fonts/atf_font/atf_font.yy",},
     {"name":"atf_smallFont","order":14,"path":"fonts/atf_smallFont/atf_smallFont.yy",},
     {"name":"f_main","order":1,"path":"fonts/f_main/f_main.yy",},
+    {"name":"Note1","order":17,"path":"notes/Note1/Note1.yy",},
     {"name":"ato_ui","order":2,"path":"objects/ato_ui/ato_ui.yy",},
     {"name":"ato_uiExample","order":2,"path":"objects/ato_uiExample/ato_uiExample.yy",},
     {"name":"input_controller_object","order":31,"path":"objects/input_controller_object/input_controller_object.yy",},

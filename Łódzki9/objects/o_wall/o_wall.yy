@@ -36,8 +36,8 @@
   "resourceVersion":"2.0",
   "solid":false,
   "spriteId":{
-    "name":"s_white",
-    "path":"sprites/s_white/s_white.yy",
+    "name":"s_tileGround",
+    "path":"sprites/s_tileGround/s_tileGround.yy",
   },
   "spriteMaskId":null,
   "visible":true,

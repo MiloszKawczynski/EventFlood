@@ -48,7 +48,7 @@ if (path_get_number(path) mod 2 == 0)
 
 draw_primitive_end();
 
-draw_set_color(c_red);
+draw_set_color(c_white);
 draw_path(path, x, y, true);
 
 gpu_set_texrepeat(false);

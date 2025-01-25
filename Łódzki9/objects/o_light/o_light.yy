@@ -1,23 +1,18 @@
 {
   "$GMObject":"",
-  "%Name":"o_gameManager",
+  "%Name":"o_light",
   "eventList":[
     {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":0,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
     {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":3,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
-    {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":64,"eventType":8,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
-    {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":2,"eventType":7,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
   ],
   "managed":true,
-  "name":"o_gameManager",
+  "name":"o_light",
   "overriddenProperties":[],
   "parent":{
     "name":"1_Objects",
     "path":"folders/1_Objects.yy",
   },
-  "parentObjectId":{
-    "name":"ato_ui",
-    "path":"objects/ato_ui/ato_ui.yy",
-  },
+  "parentObjectId":null,
   "persistent":false,
   "physicsAngularDamping":0.1,
   "physicsDensity":0.5,
@@ -35,7 +30,10 @@
   "resourceType":"GMObject",
   "resourceVersion":"2.0",
   "solid":false,
-  "spriteId":null,
+  "spriteId":{
+    "name":"s_lightCone",
+    "path":"sprites/s_lightCone/s_lightCone.yy",
+  },
   "spriteMaskId":null,
   "visible":true,
 }

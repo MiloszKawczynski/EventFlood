@@ -1,0 +1,1 @@
+image_alpha = 0.5 + abs(sin((current_time) / seed)) * 0.15;

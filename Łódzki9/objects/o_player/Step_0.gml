@@ -1,13 +1,22 @@
 // ---MOVEMENT---
 
 var horizontalDirection = input_check("right") - input_check("left");
+var verticalDirection = input_check("down") - input_check("up");
 	
 hSpeed += horizontalDirection * acceleration;
 hSpeed = min(abs(hSpeed), defaultSpeed) * sign(hSpeed);
 
+vSpeed += verticalDirection * acceleration;
+vSpeed = min(abs(vSpeed), defaultSpeed) * sign(vSpeed);
+
 if (horizontalDirection == 0)
 {
 	hSpeed -= sign(hSpeed) * deceleration;
+}
+
+if (verticalDirection == 0)
+{
+	vSpeed -= sign(vSpeed) * deceleration;
 }
 
 if (abs(hSpeed) < deceleration)
@@ -15,12 +24,12 @@ if (abs(hSpeed) < deceleration)
 	hSpeed = 0;
 }
 
-// ---BUBBLES---
-
-if (input_check("up"))
+if (abs(vSpeed) < deceleration)
 {
-	vSpeed = -defaultSpeed;
+	vSpeed = 0;
 }
+
+// ---BUBBLES---
 
 if (input_check("action") and !place_meeting(x, y, o_airArea))
 {
@@ -55,11 +64,11 @@ if (place_meeting(x, y, o_airArea))
 }
 else 
 {
-	vSpeed -= sign(vSpeed) * deceleration;
-	if (abs(vSpeed) < deceleration)
-	{
-		vSpeed = 0;
-	}
+	//vSpeed -= sign(vSpeed) * deceleration;
+	//if (abs(vSpeed) < deceleration)
+	//{
+		//vSpeed = 0;
+	//}
 }
 
 if (sign(hSpeed) != 0)
@@ -69,6 +78,38 @@ if (sign(hSpeed) != 0)
 
 //x += hSpeed;
 //y += vSpeed;
+
+//if (place_meeting(x + hSpeed, y, o_staticParent))
+//{
+	//while (!place_meeting(x + sign(hSpeed), y , o_staticParent))
+	//{
+		//x += sign(hSpeed) * 0.5;
+	//}
+		//
+	//hSpeed = 0;
+//}
+//
+//if (place_meeting(x, y + vSpeed, o_staticParent))
+//{
+	//while (!place_meeting(x, y + sign(vSpeed), o_staticParent))
+	//{
+		//y += sign(vSpeed) * 0.5;
+	//}
+		//
+	//vSpeed = 0;
+//}
+//
+//if (place_meeting(x + hSpeed, y + vSpeed, o_staticParent))
+//{
+	//while (!place_meeting(x + sign(hSpeed), y + sign(vSpeed), o_staticParent))
+	//{
+		//x += sign(hSpeed) * 0.5;
+		//y += sign(vSpeed) * 0.5;
+	//}
+		//
+	//hSpeed = 0;
+	//vSpeed = 0;
+//}
 
 phy_speed_x = hSpeed;
 phy_speed_y = vSpeed;

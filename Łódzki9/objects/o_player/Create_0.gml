@@ -1,4 +1,4 @@
-defaultSpeed = 5;
+defaultSpeed = 15;
 acceleration = 1;
 deceleration = 0.75;
 
@@ -10,3 +10,6 @@ maxAirInBubble = 16;
 
 hSpeed = 0;
 vSpeed = 0;
+
+phy_rotation = 0;
+phy_fixed_rotation = true;

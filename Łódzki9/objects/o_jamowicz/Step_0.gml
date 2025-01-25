@@ -30,6 +30,36 @@ if (isAired)
 			part_emitter_burst(_ps, _pemit2, _ptype2, 24);
 		}
 		
+		with(o_gameManager.ui)
+		{
+			switch(other.image_index)
+			{
+				case(0):
+				{
+					Julka.state.setSpriteSheet(s_head, 0);
+					break;
+				}
+				
+				case(1):
+				{
+					Karolina.state.setSpriteSheet(s_head, 1);
+					break;
+				}
+				
+				case(2):
+				{
+					Milosz.state.setSpriteSheet(s_head, 2);
+					break;
+				}
+				
+				case(3):
+				{
+					Potax.state.setSpriteSheet(s_head, 3);
+					break;
+				}
+			}
+		}
+		
 		instance_destroy();
 	}
 }

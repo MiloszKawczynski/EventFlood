@@ -283,10 +283,10 @@ function UI() constructor
 			var numberOfComponents = ds_list_size(components);
 			for(var i = 0; i < ds_list_size(components); i++)
 			{
-				if (!is_instanceof(ds_list_find_value(components, i), other.ui.Group))
-				{
-					ds_list_find_value(components, i).superStep();
-				}
+				//if (!is_instanceof(ds_list_find_value(components, i), other.ui.Group))
+				//{
+					//ds_list_find_value(components, i).superStep();
+				//}
 				ds_list_find_value(components, i).step();
 			}
 		}

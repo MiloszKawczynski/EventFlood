@@ -46,8 +46,29 @@ with(ui)
 		setDrawFunction(drawAirBar, 200, 360);
 	}
 	
+	heads = new Group();
+	heads.setGrid(5, 1, false);
+	
+	Julka = new Output();
+	Julka.state.setSpriteSheet(s_headBlack, 0);
+	
+	Karolina = new Output();
+	Karolina.state.setSpriteSheet(s_headBlack, 1);
+	
+	Milosz = new Output();
+	Milosz.state.setSpriteSheet(s_headBlack, 2);
+	
+	Potax = new Output();
+	Potax.state.setSpriteSheet(s_headBlack, 3);
+	
+	heads.addComponent(2, 1, Julka);
+	heads.addComponent(6, 1, Karolina);
+	heads.addComponent(10, 1, Milosz);
+	heads.addComponent(14, 1, Potax);
+	
 	mainLayer.addComponent(0.25, 0.5, airBar);
 	mainLayer.addComponent(0.5, 2.5, airText);
+	mainLayer.addComponent(1, 0.5, heads);
 
 	pushLayer(mainLayer);
 }

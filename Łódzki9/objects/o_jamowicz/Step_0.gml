@@ -20,6 +20,13 @@ if (isAired)
 	
 	if (!place_meeting(x, y, o_water))
 	{
+		with(instance_nearest(x, y, o_jamowiczTorso))
+		{
+			part_system_position(_ps, x, y);
+			part_emitter_burst(_ps, _pemit1, _ptype1, 150);
+			part_emitter_burst(_ps, _pemit2, _ptype2, 24);
+		}
+		
 		instance_destroy();
 	}
 }

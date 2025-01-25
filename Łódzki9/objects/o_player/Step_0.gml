@@ -31,7 +31,7 @@ if (abs(vSpeed) < deceleration)
 
 // ---BUBBLES---
 
-if (input_check("action"))
+if (input_check("action") and air > 0)
 {
 	if (air > 0 and airInBubble < maxAirInBubble)
 	{

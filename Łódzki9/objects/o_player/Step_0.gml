@@ -51,7 +51,6 @@ else
 	if (airInBubble > 0)
 	{
 		var inst = instance_create_depth(x + (52 + (airInBubble / maxAirInBubble) * 48) * image_xscale, y - 142, depth, o_bubble, 
-		//var inst = instance_create_depth(x + (52 + (airInBubble / maxAirInBubble) * 48) * image_xscale, y, depth, o_bubble, 
 		{
 			air: airInBubble
 		});
@@ -138,15 +137,38 @@ else
 
 if (sign(hSpeed) != 0)
 {
-	image_xscale = sign(hSpeed);
+	if (image_xscale != sign(hSpeed))
+	{
+		part_emitter_clear(_ps, _pemit1);
+		part_emitter_stream(_ps, _pemit1, _ptype1, 0);
+		
+		image_xscale = sign(hSpeed);
+	}
 }
 
 if (abs(hSpeed) > 0)
 {
 	sprite_index = s_submarineAnim;
+	
+	part_emitter_region(_ps, _pemit1, -27, 37, -49.875, 49.875, ps_shape_rectangle, ps_distr_linear);
+	part_system_position(_ps, x - image_xscale * 250, y + 75);
+	
+	if (image_xscale == 1)
+	{
+		part_type_direction(_ptype1, 180 - 15, 180, -0.2, 10);
+	}
+	else 
+	{
+		part_type_direction(_ptype1, 0 + 15, 0, 0.2, 10);
+	}
+	
+	part_emitter_stream(_ps, _pemit1, _ptype1, 1);
 }
 else 
 {
+	part_emitter_clear(_ps, _pemit1);
+	part_emitter_stream(_ps, _pemit1, _ptype1, 0);
+	
 	sprite_index = s_submarine;
 }
 

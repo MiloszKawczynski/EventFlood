@@ -37,12 +37,14 @@ if (isAired)
 				case(0):
 				{
 					Julka.state.setSpriteSheet(s_head, 0);
+					audio_play_sound(dthJulka, 0, false);
 					break;
 				}
 				
 				case(1):
 				{
 					Karolina.state.setSpriteSheet(s_head, 1);
+					audio_play_sound(dthKaro, 0, false);
 					break;
 				}
 				

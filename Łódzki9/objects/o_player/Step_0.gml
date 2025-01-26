@@ -37,7 +37,7 @@ if (abs(vSpeed) < deceleration)
 
 // ---BUBBLES---
 
-if (input_check("action") and air > 0)
+if (input_check("action"))
 {
 	if (air > 0 and airInBubble < maxAirInBubble)
 	{
@@ -46,9 +46,12 @@ if (input_check("action") and air > 0)
 	}
 	else 
 	{
-		if (airInBubble == 0)
+		if (air == 0)
 		{
-			vSpeed = 4;
+			if (!audio_is_playing(sn_pusta))
+			{
+				audio_play_sound(sn_pusta, 0, false, 4);
+			}
 		}
 	}
 }
@@ -195,6 +198,11 @@ if (place_meeting(x, y, o_cables) and alarm[0] == -1)
 	sprite_index = s_submarineShock;
 	
 	alarm[0] = 80;
+	
+	if (!audio_is_playing(sn_elec))
+	{
+		audio_play_sound(sn_elec, 0, false, 4);
+	}
 }
 
 phy_speed_x = hSpeed;

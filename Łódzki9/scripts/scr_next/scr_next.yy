@@ -1,0 +1,13 @@
+{
+  "$GMScript":"v1",
+  "%Name":"scr_next",
+  "isCompatibility":false,
+  "isDnD":false,
+  "name":"scr_next",
+  "parent":{
+    "name":"4_Scripts",
+    "path":"folders/4_Scripts.yy",
+  },
+  "resourceType":"GMScript",
+  "resourceVersion":"2.0",
+}

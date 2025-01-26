@@ -1,3 +1,5 @@
+image_speed = 0;
+
 //ps_air
 _ps = part_system_create();
 part_system_draw_order(_ps, true);

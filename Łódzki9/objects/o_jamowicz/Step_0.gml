@@ -49,15 +49,29 @@ if (isAired)
 				case(2):
 				{
 					Milosz.state.setSpriteSheet(s_head, 2);
+					audio_play_sound(dthMilosz, 0, false);
 					break;
 				}
 				
 				case(3):
 				{
 					Potax.state.setSpriteSheet(s_head, 3);
+					audio_play_sound(dthManus, 0, false);
+					break;
+				}
+				
+				case(4):
+				{
+					Swistak.state.setSpriteSheet(s_head, 4);
+					audio_play_sound(dthSwistak, 0, false);
 					break;
 				}
 			}
+		}
+		
+		if (instance_number(o_jamowicz) == 1)
+		{
+			instance_nearest(x, y, o_jamowiczTorso).alarm[0] = 10;
 		}
 		
 		instance_destroy();

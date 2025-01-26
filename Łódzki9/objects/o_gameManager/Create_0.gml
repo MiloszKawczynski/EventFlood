@@ -14,8 +14,8 @@ with(ui)
 	{
 		var drawAirBar = function()
 		{					
-			var widthBackground = 200;
-			var heightBackground = 360;
+			var widthBackground = 200 * 1.5;
+			var heightBackground = 360 * 1.5;
 			
 			if (!surface_exists(surface))
 			{
@@ -32,10 +32,10 @@ with(ui)
 			var y2 = y1 + heightBackground;
 			
 			draw_set_color(c_aqua);
-			draw_sprite(s_tank, 0, widthBackground / 2, heightBackground / 2);
+			draw_sprite_ext(s_tank, 0, widthBackground / 2, heightBackground / 2, 1.5, 1.5, 0, c_white, 1);
 			gpu_set_colorwriteenable(1, 1, 1, 0);
 			draw_rectangle(x1, y1, x2, y2, false);
-			draw_sprite(s_tank, 1, widthBackground / 2, heightBackground / 2);
+			draw_sprite_ext(s_tank, 1, widthBackground / 2, heightBackground / 2, 1.5, 1.5, 0, c_white, 1)
 			gpu_set_colorwriteenable(1, 1, 1, 1);
 		
 			surface_reset_target();
@@ -61,14 +61,19 @@ with(ui)
 	Potax = new Output();
 	Potax.state.setSpriteSheet(s_headBlack, 3);
 	
-	heads.addComponent(2, 1, Julka);
-	heads.addComponent(6, 1, Karolina);
-	heads.addComponent(10, 1, Milosz);
-	heads.addComponent(14, 1, Potax);
+	Swistak = new Output();
+	Swistak.state.setSpriteSheet(s_headBlack, 4);
 	
-	mainLayer.addComponent(0.25, 0.5, airBar);
-	mainLayer.addComponent(0.5, 2.5, airText);
-	mainLayer.addComponent(1, 0.5, heads);
+	heads.addComponent(5, 1, Julka);
+	heads.addComponent(10, 1, Karolina);
+	heads.addComponent(15, 1, Milosz);
+	heads.addComponent(20, 1, Potax);
+	heads.addComponent(25, 1, Swistak);
+	heads.setProperties(1.5, 1.5);
+	
+	mainLayer.addComponent(0.35, 0.5, airBar);
+	mainLayer.addComponent(0.75, 3.5, airText);
+	mainLayer.addComponent(0.75, 0.5, heads);
 
 	pushLayer(mainLayer);
 }

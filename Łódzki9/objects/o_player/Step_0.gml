@@ -80,6 +80,10 @@ if (sum != 0)
 	if (air < maxAir)
 	{
 		air++;
+		if (!audio_is_playing(sn_air))
+		{
+			audio_play_sound(sn_air, 0, false);
+		}
 	}
 }
 
@@ -124,13 +128,17 @@ vSpeed -= sum;
 // ---AirPockets---
 
 if (place_meeting(x, y, o_airArea)
-	or !place_meeting(x, y, o_water))
+	or bbox_top < 1450)
 {
 	vSpeed += 1.5;
 	vSpeed = min(vSpeed, 30);
 	
 	air++;
 	air = min(air, maxAir);
+	if (!audio_is_playing(sn_air))
+	{
+		audio_play_sound(sn_air, 0, false);
+	}
 }
 else 
 {
@@ -191,3 +199,12 @@ if (place_meeting(x, y, o_cables) and alarm[0] == -1)
 
 phy_speed_x = hSpeed;
 phy_speed_y = vSpeed;
+
+if (!instance_exists(o_ican))
+{
+	if (input_check_long("back"))
+	{
+		phy_position_x = o_checkPoint.x;
+		phy_position_y = o_checkPoint.y;
+	}
+}
